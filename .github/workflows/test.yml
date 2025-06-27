@@ -36,10 +36,10 @@ jobs:
           pip install -r requirements.txt || echo "No requirements.txt found"
 
 
-          #      - name: Instalar Chrome
+        #  - name: Instalar Chrome
         run: |
-          # sudo apt update
-          # sudo apt install -y wget unzip
+# sudo apt update
+# sudo apt install -y wget unzip
           # wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           # sudo apt install -y ./google-chrome-stable_current_amd64.deb
       - name: Ejecutar prueba
