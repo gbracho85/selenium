@@ -17,7 +17,7 @@ jobs:
     strategy:
       matrix:
         python-version: [ '3.13.3']
-        browser: ['firefox']
+        browser: ['chrome']
     
     steps:
       - name:  Clonar repositorio
