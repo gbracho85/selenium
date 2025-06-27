@@ -1,8 +1,8 @@
-name: 🧪 Pruebas Selenium Automatizadas
+name: Selenium
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
   schedule:
@@ -19,15 +19,6 @@ jobs:
         python-version: [ '3.13.3']
         browser: ['firefox']
     
-    steps:
-      - name: 📥 Clonar repositorio
-        uses: actions/checkout@v4 
-        
-      - name: 🐍 Configurar Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v5
-        with:
-          python-version: ${{ matrix.python-version }}
-          cache: 'pip'
           
       - name: 📦 Instalar dependencias
         run: |
